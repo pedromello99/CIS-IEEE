@@ -1899,3 +1899,97 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2023-07-10 20:49:03,827:INFO:_display_container: 2
 2023-07-10 20:49:03,828:INFO:GradientBoostingRegressor(random_state=123)
 2023-07-10 20:49:03,829:INFO:compare_models() successfully completed......................................
+2023-07-10 21:15:00,850:INFO:Initializing create_model()
+2023-07-10 21:15:00,850:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ED94322F70>, estimator=gbr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-07-10 21:15:00,850:INFO:Checking exceptions
+2023-07-10 21:15:00,868:INFO:Importing libraries
+2023-07-10 21:15:00,869:INFO:Copying training dataset
+2023-07-10 21:15:00,877:INFO:Defining folds
+2023-07-10 21:15:00,877:INFO:Declaring metric variables
+2023-07-10 21:15:00,881:INFO:Importing untrained model
+2023-07-10 21:15:00,888:INFO:Gradient Boosting Regressor Imported successfully
+2023-07-10 21:15:00,899:INFO:Starting cross validation
+2023-07-10 21:15:00,900:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2023-07-10 21:15:07,974:INFO:Calculating mean and std
+2023-07-10 21:15:07,977:INFO:Creating metrics dataframe
+2023-07-10 21:15:07,983:INFO:Finalizing model
+2023-07-10 21:15:08,601:INFO:Uploading results into container
+2023-07-10 21:15:08,602:INFO:Uploading model into container now
+2023-07-10 21:15:08,614:INFO:_master_model_container: 19
+2023-07-10 21:15:08,614:INFO:_display_container: 3
+2023-07-10 21:15:08,615:INFO:GradientBoostingRegressor(random_state=123)
+2023-07-10 21:15:08,615:INFO:create_model() successfully completed......................................
+2023-07-10 21:15:08,688:INFO:Initializing tune_model()
+2023-07-10 21:15:08,688:INFO:tune_model(estimator=GradientBoostingRegressor(random_state=123), fold=None, round=4, n_iter=10, custom_grid=None, optimize=RMSE, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ED94322F70>)
+2023-07-10 21:15:08,688:INFO:Checking exceptions
+2023-07-10 21:15:08,706:INFO:Copying training dataset
+2023-07-10 21:15:08,712:INFO:Checking base model
+2023-07-10 21:15:08,712:INFO:Base model : Gradient Boosting Regressor
+2023-07-10 21:15:08,717:INFO:Declaring metric variables
+2023-07-10 21:15:08,721:INFO:Defining Hyperparameters
+2023-07-10 21:15:08,792:INFO:Tuning with n_jobs=-1
+2023-07-10 21:15:08,792:INFO:Initializing RandomizedSearchCV
+2023-07-10 21:16:23,757:INFO:best_params: {'actual_estimator__subsample': 0.85, 'actual_estimator__n_estimators': 230, 'actual_estimator__min_samples_split': 5, 'actual_estimator__min_samples_leaf': 5, 'actual_estimator__min_impurity_decrease': 0.02, 'actual_estimator__max_features': 1.0, 'actual_estimator__max_depth': 7, 'actual_estimator__learning_rate': 0.15}
+2023-07-10 21:16:23,759:INFO:Hyperparameter search completed
+2023-07-10 21:16:23,760:INFO:SubProcess create_model() called ==================================
+2023-07-10 21:16:23,761:INFO:Initializing create_model()
+2023-07-10 21:16:23,761:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ED94322F70>, estimator=GradientBoostingRegressor(random_state=123), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EDE092F9D0>, model_only=True, return_train_score=False, kwargs={'subsample': 0.85, 'n_estimators': 230, 'min_samples_split': 5, 'min_samples_leaf': 5, 'min_impurity_decrease': 0.02, 'max_features': 1.0, 'max_depth': 7, 'learning_rate': 0.15})
+2023-07-10 21:16:23,761:INFO:Checking exceptions
+2023-07-10 21:16:23,761:INFO:Importing libraries
+2023-07-10 21:16:23,761:INFO:Copying training dataset
+2023-07-10 21:16:23,767:INFO:Defining folds
+2023-07-10 21:16:23,767:INFO:Declaring metric variables
+2023-07-10 21:16:23,772:INFO:Importing untrained model
+2023-07-10 21:16:23,772:INFO:Declaring custom model
+2023-07-10 21:16:23,779:INFO:Gradient Boosting Regressor Imported successfully
+2023-07-10 21:16:23,787:INFO:Starting cross validation
+2023-07-10 21:16:23,788:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2023-07-10 21:16:32,245:INFO:Calculating mean and std
+2023-07-10 21:16:32,247:INFO:Creating metrics dataframe
+2023-07-10 21:16:32,254:INFO:Finalizing model
+2023-07-10 21:16:35,504:INFO:Uploading results into container
+2023-07-10 21:16:35,505:INFO:Uploading model into container now
+2023-07-10 21:16:35,505:INFO:_master_model_container: 20
+2023-07-10 21:16:35,506:INFO:_display_container: 4
+2023-07-10 21:16:35,506:INFO:GradientBoostingRegressor(learning_rate=0.15, max_depth=7, max_features=1.0,
+                          min_impurity_decrease=0.02, min_samples_leaf=5,
+                          min_samples_split=5, n_estimators=230,
+                          random_state=123, subsample=0.85)
+2023-07-10 21:16:35,508:INFO:create_model() successfully completed......................................
+2023-07-10 21:16:35,591:INFO:SubProcess create_model() end ==================================
+2023-07-10 21:16:35,591:INFO:choose_better activated
+2023-07-10 21:16:35,597:INFO:SubProcess create_model() called ==================================
+2023-07-10 21:16:35,598:INFO:Initializing create_model()
+2023-07-10 21:16:35,598:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001ED94322F70>, estimator=GradientBoostingRegressor(random_state=123), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-07-10 21:16:35,598:INFO:Checking exceptions
+2023-07-10 21:16:35,600:INFO:Importing libraries
+2023-07-10 21:16:35,600:INFO:Copying training dataset
+2023-07-10 21:16:35,604:INFO:Defining folds
+2023-07-10 21:16:35,604:INFO:Declaring metric variables
+2023-07-10 21:16:35,605:INFO:Importing untrained model
+2023-07-10 21:16:35,605:INFO:Declaring custom model
+2023-07-10 21:16:35,606:INFO:Gradient Boosting Regressor Imported successfully
+2023-07-10 21:16:35,606:INFO:Starting cross validation
+2023-07-10 21:16:35,608:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2023-07-10 21:16:43,018:INFO:Calculating mean and std
+2023-07-10 21:16:43,019:INFO:Creating metrics dataframe
+2023-07-10 21:16:43,021:INFO:Finalizing model
+2023-07-10 21:16:43,648:INFO:Uploading results into container
+2023-07-10 21:16:43,649:INFO:Uploading model into container now
+2023-07-10 21:16:43,649:INFO:_master_model_container: 21
+2023-07-10 21:16:43,649:INFO:_display_container: 5
+2023-07-10 21:16:43,650:INFO:GradientBoostingRegressor(random_state=123)
+2023-07-10 21:16:43,650:INFO:create_model() successfully completed......................................
+2023-07-10 21:16:43,730:INFO:SubProcess create_model() end ==================================
+2023-07-10 21:16:43,731:INFO:GradientBoostingRegressor(random_state=123) result for RMSE is 28635.6024
+2023-07-10 21:16:43,732:INFO:GradientBoostingRegressor(learning_rate=0.15, max_depth=7, max_features=1.0,
+                          min_impurity_decrease=0.02, min_samples_leaf=5,
+                          min_samples_split=5, n_estimators=230,
+                          random_state=123, subsample=0.85) result for RMSE is 31932.3124
+2023-07-10 21:16:43,732:INFO:GradientBoostingRegressor(random_state=123) is best model
+2023-07-10 21:16:43,733:INFO:choose_better completed
+2023-07-10 21:16:43,733:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-07-10 21:16:43,746:INFO:_master_model_container: 21
+2023-07-10 21:16:43,747:INFO:_display_container: 4
+2023-07-10 21:16:43,747:INFO:GradientBoostingRegressor(random_state=123)
+2023-07-10 21:16:43,747:INFO:tune_model() successfully completed......................................
