@@ -3,4 +3,4 @@
   
 [Link para a Atividade do 1º Período](primeiroPeriodo.ipynb)
 
-[Link para o 2º Período](wineCONTRIBUTING.ipynb)
+[Link para a Atividade do 2º Período](wineCONTRIBUTING.ipynb)
